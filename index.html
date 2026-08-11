@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,9 +9,12 @@
   <link rel="icon" href="assets/logo-white.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500;700;900&family=Space+Grotesk:wght@400;500&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500;700;900&family=Space+Grotesk:wght@400;500&display=swap"
+    rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
 
   <!-- ======== HEADER FIJO ======== -->
@@ -139,7 +143,8 @@
     <!-- ======== EL CLUB ======== -->
     <section class="section">
       <div class="wrap split">
-        <div class="media-ph reveal" data-label="Foto — sala principal" role="img" aria-label="Interior de la sala principal de Barraca"></div>
+        <div class="media-ph reveal" data-label="Foto — sala principal" role="img"
+          aria-label="Interior de la sala principal de Barraca"></div>
         <div class="reveal">
           <span class="eyebrow">El club</span>
           <h2>Más que una sala, una forma de vivir la noche</h2>
@@ -216,7 +221,9 @@
         <ul>
           <li><a href="mailto:info@barraca.com">info@barraca.com</a></li>
           <li><a href="tickets.html">Reservados VIP</a></li>
-          <li><p>Ctra. Nazaret—Oliva, s/n</p></li>
+          <li>
+            <p>Ctra. Nazaret—Oliva, s/n</p>
+          </li>
         </ul>
       </div>
       <div>
@@ -239,5 +246,19 @@
   </footer>
 
   <script src="script.js"></script>
+
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+  <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+  </script>
 </body>
 </html>
