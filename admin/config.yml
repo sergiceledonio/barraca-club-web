@@ -1,0 +1,56 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+collections:
+  - name: "eventos"
+    label: "Eventos"
+    label_singular: "Evento"
+    folder: "content/eventos"
+
+    create: true
+    delete: true
+
+    extension: "json"
+    format: "json"
+
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+
+    fields:
+      - label: "Nombre del evento"
+        name: "title"
+        widget: "string"
+
+      - label: "Fecha"
+        name: "date"
+        widget: "datetime"
+
+      - label: "Lugar"
+        name: "location"
+        widget: "string"
+
+      - label: "Imagen"
+        name: "image"
+        widget: "image"
+
+      - label: "Descripción corta"
+        name: "description"
+        widget: "text"
+
+      - label: "Descripción completa"
+        name: "body"
+        widget: "markdown"
+        required: false
+
+      - label: "Enlace de entradas"
+        name: "ticket_url"
+        widget: "string"
+        required: false
+
+      - label: "Publicado"
+        name: "published"
+        widget: "boolean"
+        default: true
