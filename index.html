@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BARRACA — Club</title>
+  <meta name="description" content="Barraca. Club, música electrónica y cultura de baile. Tickets, academia y shop." />
+  <link rel="icon" href="assets/logo-white.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500;700;900&family=Space+Grotesk:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ======== HEADER FIJO ======== -->
+  <header class="header">
+    <div class="header__inner">
+      <a class="header__logo" href="index.html" aria-label="Barraca — inicio">
+        <img src="assets/logo-white.png" alt="Barraca" />
+      </a>
+
+      <div class="menu">
+        <nav class="nav" aria-label="Principal">
+          <a href="tickets.html">Tickets</a>
+          <a href="club.html">Club</a>
+          <a href="academia.html">Academia</a>
+          <a href="shop.html">Shop</a>
+        </nav>
+
+        <button class="burger" aria-label="Menú" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ======== HERO ======== -->
+    <section class="hero">
+      <div class="hero__stripes" aria-hidden="true"></div>
+      <div class="hero__media" aria-hidden="true">
+        <!--
+          VÍDEO DE FONDO: descomenta y pon tu archivo en assets/hero.mp4
+          (MP4/WebM comprimido, idealmente < 8 MB, sin audio)
+
+        <video autoplay muted loop playsinline poster="assets/hero-poster.jpg">
+          <source src="assets/hero.mp4" type="video/mp4" />
+        </video>
+        -->
+      </div>
+
+      <div class="hero__inner wrap">
+        <div class="hero__next">
+          <span class="dot" aria-hidden="true"></span>
+          <span class="eyebrow">Próxima sesión — Sáb 08 Ago · 23:59</span>
+        </div>
+
+        <h1 class="hero__title">
+          Enter<br />
+          the <span class="fina">sound</span>
+        </h1>
+
+        <div class="hero__meta">
+          <p class="hero__claim">
+            El sonido de Valencia <span>desde 1965</span>
+          </p>
+          <a class="btn" href="tickets.html">Ver tickets →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== MARQUEE ======== -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Viernes <b>///</b> Techno</span>
+        <span>Sábado <b>///</b> Club Night</span>
+        <span>Reservados VIP <b>///</b> Abiertos</span>
+        <span>Barraca <b>///</b> Desde la costa</span>
+        <span>Viernes <b>///</b> Techno</span>
+        <span>Sábado <b>///</b> Club Night</span>
+        <span>Reservados VIP <b>///</b> Abiertos</span>
+        <span>Barraca <b>///</b> Desde la costa</span>
+      </div>
+    </div>
+
+    <!-- ======== PRÓXIMOS EVENTOS ======== -->
+    <section class="section">
+      <div class="wrap">
+        <div class="section__head reveal">
+          <div>
+            <span class="eyebrow">Agenda</span>
+            <h2>Próximos eventos</h2>
+          </div>
+          <a class="btn" href="tickets.html">Todos los tickets</a>
+        </div>
+
+        <article class="evento reveal">
+          <div class="evento__fecha">
+            <span class="dia">08</span>
+            <span class="mes">Ago</span>
+          </div>
+          <div>
+            <h3 class="evento__nombre">Barraca Club Night</h3>
+            <p class="evento__lineup">Line-up por anunciar · Sala principal · 23:59 — 07:30</p>
+          </div>
+          <a class="btn" href="tickets.html">Entradas</a>
+        </article>
+
+        <article class="evento reveal">
+          <div class="evento__fecha">
+            <span class="dia">14</span>
+            <span class="mes">Ago</span>
+          </div>
+          <div>
+            <h3 class="evento__nombre">Viernes /// Techno</h3>
+            <p class="evento__lineup">Line-up por anunciar · Sala principal · 23:59 — 07:30</p>
+          </div>
+          <a class="btn" href="tickets.html">Entradas</a>
+        </article>
+
+        <article class="evento reveal">
+          <div class="evento__fecha">
+            <span class="dia">15</span>
+            <span class="mes">Ago</span>
+          </div>
+          <div>
+            <h3 class="evento__nombre">Barraca Club Night</h3>
+            <p class="evento__lineup">Line-up por anunciar · Sala principal · 23:59 — 07:30</p>
+          </div>
+          <a class="btn" href="tickets.html">Entradas</a>
+        </article>
+      </div>
+    </section>
+
+    <div class="stripes" aria-hidden="true"></div>
+
+    <!-- ======== EL CLUB ======== -->
+    <section class="section">
+      <div class="wrap split">
+        <div class="media-ph reveal" data-label="Foto — sala principal" role="img" aria-label="Interior de la sala principal de Barraca"></div>
+        <div class="reveal">
+          <span class="eyebrow">El club</span>
+          <h2>Más que una sala, una forma de vivir la noche</h2>
+          <p>
+            Barraca es historia viva de la electrónica. Décadas de sesiones, residentes
+            y artistas internacionales han hecho de este club un punto de peregrinación
+            para quien entiende la pista como un lugar de encuentro.
+          </p>
+          <p>
+            Sonido de primera línea, producción cuidada y una comunidad que vuelve
+            fin de semana tras fin de semana.
+          </p>
+          <a class="btn" href="club.html">Conoce el club →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== GALERÍA ======== -->
+    <section class="section">
+      <div class="wrap">
+        <div class="section__head reveal">
+          <div>
+            <span class="eyebrow">Galería</span>
+            <h2>Últimas sesiones</h2>
+          </div>
+        </div>
+        <div class="galeria">
+          <div class="media-ph reveal" data-label="Foto 01"></div>
+          <div class="media-ph reveal" data-label="Foto 02"></div>
+          <div class="media-ph reveal" data-label="Foto 03"></div>
+          <div class="media-ph reveal" data-label="Foto 04"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== ACADEMIA + SHOP ======== -->
+    <section class="section">
+      <div class="wrap duo">
+        <a class="card reveal" href="academia.html">
+          <span class="eyebrow">Academia</span>
+          <h3>Aprende de la cabina</h3>
+          <p>Cursos de DJ y producción impartidos por los residentes del club. Del bedroom a la sala principal.</p>
+          <span class="link">Ver cursos →</span>
+        </a>
+        <a class="card reveal" href="shop.html">
+          <span class="eyebrow">Shop</span>
+          <h3>Llévate Barraca puesta</h3>
+          <p>Merchandising oficial: camisetas, gorras y ediciones limitadas de cada temporada.</p>
+          <span class="link">Ir a la shop →</span>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======== FOOTER ======== -->
+  <footer class="footer">
+    <div class="wrap footer__main">
+      <div>
+        <img src="assets/logo-white.png" alt="Barraca" />
+        <p>Club de música electrónica.<br />Desde la costa mediterránea.</p>
+      </div>
+      <div>
+        <h4>Club</h4>
+        <ul>
+          <li><a href="tickets.html">Tickets</a></li>
+          <li><a href="club.html">El club</a></li>
+          <li><a href="academia.html">Academia</a></li>
+          <li><a href="shop.html">Shop</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="mailto:info@barraca.com">info@barraca.com</a></li>
+          <li><a href="tickets.html">Reservados VIP</a></li>
+          <li><p>Ctra. Nazaret—Oliva, s/n</p></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Síguenos</h4>
+        <ul>
+          <li><a href="#" rel="noopener">Instagram</a></li>
+          <li><a href="#" rel="noopener">TikTok</a></li>
+          <li><a href="#" rel="noopener">YouTube</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="wrap footer__legal">
+      <span>© 2026 Barraca. Todos los derechos reservados.</span>
+      <nav aria-label="Legal">
+        <a href="#">Aviso legal</a>
+        <a href="#">Privacidad</a>
+        <a href="#">Cookies</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
